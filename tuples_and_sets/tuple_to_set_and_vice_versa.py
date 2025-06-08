@@ -1,0 +1,6 @@
+s = (1, 2, 3, 2, 4, 5, 1)
+print(s)
+t = set(s)
+print(t)
+s = tuple(t)
+print(s)
