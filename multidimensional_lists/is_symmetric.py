@@ -16,7 +16,15 @@ def transpose(matrix: List[List[int]]) -> List[List[int]]:
 
     return transposed
 
+
+def is_symmetric(matrix: List[List[int]]) -> bool:
+    if matrix == transpose(matrix):
+        return True
+    return False
+
+
 rows = 3
 cols = 3
 matrix = [[i + 1 for i in range(row * cols, (row + 1) * cols)] for row in range(rows)]
-print(transpose(matrix))
+# matrix = [[1 for i in range(row * cols, (row + 1) * cols)] for row in range(rows)]
+print(is_symmetric(matrix))
